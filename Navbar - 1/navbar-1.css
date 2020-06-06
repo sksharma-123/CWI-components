@@ -1,0 +1,8 @@
+#btn-search {
+    border: 1px solid white;
+    color: white;
+}
+
+#btn-search:hover {
+    border-color: green;
+}
