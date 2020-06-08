@@ -12,7 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://sksharma-123.github.io/cwi/cwi.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
-    <title>Simple Navbar</title>
+    <title>Navbar animation on scroll</title>
 
     <style>
         #iframe {
@@ -36,7 +36,7 @@
 <body>
 
     <iframe id="iframe" height="350px" width="100%"
-        src="https://sksharma-123.github.io/CWI-components/Navbar-1/navbar-1.html" name="iframe_a">
+        src="https://sksharma-123.github.io/CWI-components/Navbar-4/navbar-4.html" name="iframe_a">
     </iframe>
     <div class="text-center">
         <button class="btn btn-primary" id="button"><i class="fas fa-copy mr-2"></i>Copy code</button>
@@ -56,41 +56,24 @@
             <div class="tab-pane fade show active" id="home-just" role="tabpanel" aria-labelledby="home-tab-just">
                 <pre id="myInput" class="my-0">
                     <code class="language-markup">
-                        &lt;nav class="navbar navbar-expand-lg navbar-dark py-0 bc-blue-izis shad"&gt;
-                            &lt;img class="navbar-brand" src="https://img.icons8.com/color/48/000000/home.png" /&gt;
-                            &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
-                            &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
-                                &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
-                            &lt;/button&gt;
-                            &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
-                                &lt;ul class="navbar-nav mr-auto"&gt;
-                                    &lt;li class="nav-item active hshad btn-ripple"&gt;
-                                        &lt;a class="nav-link" href="#"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
-                                    &lt;/li&gt;
-                                    &lt;li class="nav-item hshad btn-ripple"&gt;
-                                        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
-                                    &lt;/li&gt;
-                                    &lt;li class="nav-item dropdown"&gt;
-                                        &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false"&gt;
-                                            Dropdown
-                                        &lt;/a&gt;
-                                        &lt;div class="dropdown-menu" aria-labelledby="navbarDropdown"&gt;
-                                            &lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;
-                                            &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
-                                            &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
-                                            &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
-                                        &lt;/div&gt;
-                                    &lt;/li&gt;
-                                    &lt;li class="nav-item"&gt;
-                                        &lt;a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"&gt;Disabled&lt;/a&gt;
-                                    &lt;/li&gt;
+                        &lt;nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-fixed-top"&gt;
+                            &lt;div class="navbar-header"&gt;
+                                &lt;a href="#" class="navbar-brand"&gt;Company Logo&lt;/a&gt;
+                                &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#resNav"&gt;
+                                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                                &lt;/button&gt;
+
+                            &lt;/div&gt;
+                            &lt;div class="collapse navbar-collapse" id="resNav"&gt;
+                                &lt;ul class="nav navbar-nav navbar-right"&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;Team&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
                                 &lt;/ul&gt;
-                                &lt;form class="form-inline my-2 my-lg-0"&gt;
-                                    &lt;input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"&gt;
-                                    &lt;button class="btn br-1 btn-outline-success my-2 my-sm-0" id="btn-search" type="submit"&gt;Search&lt;/button&gt;
-                                &lt;/form&gt;
                             &lt;/div&gt;
                         &lt;/nav&gt;
                     </code>
@@ -99,7 +82,11 @@
             <div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
                 <pre id="link" class="my-0">
                     <code class="language-markup">
-                        &lt;link rel="stylesheet" href="https://sksharma-123.github.io/CWI-components/Navbar-2/navbar-2.css"&gt;
+                        &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"&gt;<br />
+                        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;<br />
+                        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;<br />
+                        &lt;link rel="stylesheet" href="https://sksharma-123.github.io/CWI-components/Navbar-4/navbar-4.css"&gt;<br />
+                        &lt;script src="https://sksharma-123.github.io/CWI-components/Navbar-4/navbar-4.js"&gt;&lt;/script&gt;
                     </code>
                 </pre>
                 <div class="text-center">
