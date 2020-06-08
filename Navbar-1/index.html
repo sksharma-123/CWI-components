@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://sksharma-123.github.io/cwi/cwi.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
+    <title>Title</title>
+
+    <style>
+        #iframe {
+            border-left: none;
+            border-right: none;
+            border-top: none;
+        }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+        textarea {
+            position: absolute;
+            left: -100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <iframe id="iframe" height="350px" width="100%"
+        src="https://sksharma-123.github.io/CWI-components/Navbar-1/navbar-1.html" name="iframe_a">
+    </iframe>
+    <div class="text-center">
+        <button class="btn btn-primary" id="button"><i class="fas fa-copy mr-2"></i>Copy code</button>
+    </div>
+    <div class="mx-auto" style="width: 98%;">
+        <ul class="nav nav-tabs nav-justified md-tabs indigo" id="myTabJust" role="tablist">
+            <li class="nav-item rtr-5">
+                <a class="nav-link active" id="home-tab-just" data-toggle="tab" href="#home-just" role="tab"
+                    aria-controls="home-just" aria-selected="true"><i class="fas fa-laptop-code mr-2"></i>HTML</a>
+            </li>
+            <li class="nav-item rtl-5">
+                <a class="nav-link" id="profile-tab-just" data-toggle="tab" href="#profile-just" role="tab"
+                    aria-controls="profile-just" aria-selected="false"><i class="far fa-clone mr-2"></i>Resources</a>
+            </li>
+        </ul>
+        <div class="tab-content card pt-0" id="myTabContentJust">
+            <div class="tab-pane fade show active" id="home-just" role="tabpanel" aria-labelledby="home-tab-just">
+                <pre id="myInput" class="my-0">
+                    <code class="language-markup">
+                        &lt;nav class="navbar navbar-expand-lg navbar-dark py-0 bc-blue-izis shad"&gt;
+                            &lt;img class="navbar-brand" src="https://img.icons8.com/color/48/000000/home.png" /&gt;
+                            &lt;a class="navbar-brand" href="#"&gt;Navbar&lt;/a&gt;
+                            &lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                                &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;div class="collapse navbar-collapse" id="navbarSupportedContent"&gt;
+                                &lt;ul class="navbar-nav mr-auto"&gt;
+                                    &lt;li class="nav-item active hshad btn-ripple"&gt;
+                                        &lt;a class="nav-link" href="#"&gt;Home &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="nav-item hshad btn-ripple"&gt;
+                                        &lt;a class="nav-link" href="#"&gt;Link&lt;/a&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="nav-item dropdown"&gt;
+                                        &lt;a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false"&gt;
+                                            Dropdown
+                                        &lt;/a&gt;
+                                        &lt;div class="dropdown-menu" aria-labelledby="navbarDropdown"&gt;
+                                            &lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;
+                                            &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
+                                            &lt;div class="dropdown-divider"&gt;&lt;/div&gt;
+                                            &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="nav-item"&gt;
+                                        &lt;a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"&gt;Disabled&lt;/a&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;form class="form-inline my-2 my-lg-0"&gt;
+                                    &lt;input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"&gt;
+                                    &lt;button class="btn br-1 btn-outline-success my-2 my-sm-0" id="btn-search" type="submit"&gt;Search&lt;/button&gt;
+                                &lt;/form&gt;
+                            &lt;/div&gt;
+                        &lt;/nav&gt;
+                    </code>
+                </pre>
+            </div>
+            <div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
+                <pre id="link" class="my-0"></pre>
+                    <code class="language-markup">
+                        &lt;link rel="stylesheet" href="https://sksharma-123.github.io/CWI-components/Navbar-2/navbar-2.css"&gt;
+                    </code>
+                </pre>
+                <div class="text-center">
+                    <button class="btn btn-primary" id="copy-link"><i class="fas fa-copy mr-2"></i>Copy link</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // copy code ***************************************************************
+        function copyFunction() {
+            const copyText = document.getElementById("myInput").textContent;
+            const textArea = document.createElement('textarea');
+            textArea.textContent = copyText;
+            document.body.append(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.getElementById('button').innerHTML = "<i class=\"fas fa-check mr-2\"></i>Copied";
+            setInterval(() => { document.getElementById('button').innerHTML = "<i class=\"fas fa-copy mr-2\"></i>Copy code"; }, 2000)
+        }
+
+        document.getElementById('button').addEventListener('click', copyFunction);
+
+
+        // copy link ****************************************************************
+        function copyLink() {
+            const copyText = document.getElementById("link").textContent;
+            const textArea = document.createElement('textarea');
+            textArea.textContent = copyText;
+            document.body.append(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.getElementById('copy-link').innerHTML = "<i class=\"fas fa-check mr-2\"></i>Copied";
+            setInterval(() => { document.getElementById('copy-link').innerHTML = "<i class=\"fas fa-copy mr-2\"></i>Copy link"; }, 2000)
+        }
+
+        document.getElementById('copy-link').addEventListener('click', copyLink);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+</body>
+
+</html>
